@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primer drop | Doble Yema</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">Doble Yema</a>
+        <a class="button secondary" href="index.html">Volver</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section primer-drop-section">
+        <div class="container">
+          <h1 class="page-title">Primer drop</h1>
+
+          <section class="shop-intro" aria-labelledby="shop-title">
+            <div class="shop-hero">
+              <div>
+                <p class="eyebrow">Loja limitada</p>
+                <h2 id="shop-title">Compra tu pieza y elige cómo pagar.</h2>
+                <p>
+                  Los pedidos se confirman por WhatsApp y aceptamos crédito/débito o Pix.
+                  Cada pieza es limitada y no tiene reposición.
+                </p>
+              </div>
+              <div class="shop-highlights">
+                <div class="shop-pill">Entrega rápida</div>
+                <div class="shop-pill">Pago seguro</div>
+                <div class="shop-pill">Edición limitada</div>
+              </div>
+            </div>
+              <div class="gallery-grid">
+                <article class="gallery-card shirt">
+                  <span class="product-badge">Solo 20 unidades disponibles</span>
+                  <img src="assets/piece-1.png" alt="Camiseta 1" />
+                  <div class="product-meta">
+                    <div class="product-meta-top">
+                      <span class="product-name">Camiseta 1</span>
+                      <span class="product-price">R$ 149</span>
+                    </div>
+                    <button class="button primary buy-button" type="button" data-product="Camiseta 1" data-price="149" data-stock="20">Comprar</button>
+                  </div>
+                </article>
+                <article class="gallery-card shirt">
+                  <span class="product-badge">Solo 20 unidades disponibles</span>
+                  <img src="assets/piece-2.png" alt="Camiseta 2" />
+                  <div class="product-meta">
+                    <div class="product-meta-top">
+                      <span class="product-name">Camiseta 2</span>
+                      <span class="product-price">R$ 149</span>
+                    </div>
+                    <button class="button primary buy-button" type="button" data-product="Camiseta 2" data-price="149" data-stock="20">Comprar</button>
+                  </div>
+                </article>
+                <article class="gallery-card shirt">
+                  <span class="product-badge">Solo 20 unidades disponibles</span>
+                  <img src="assets/piece-3.png" alt="Camiseta 3" />
+                  <div class="product-meta">
+                    <div class="product-meta-top">
+                      <span class="product-name">Camiseta 3</span>
+                      <span class="product-price">R$ 149</span>
+                    </div>
+                    <button class="button primary buy-button" type="button" data-product="Camiseta 3" data-price="149" data-stock="20">Comprar</button>
+                  </div>
+                </article>
+                <article class="gallery-card">
+                  <span class="product-badge">Solo 20 unidades disponibles</span>
+                  <img src="assets/piece-4.png" alt="Camiseta 4" />
+                  <div class="product-meta">
+                    <div class="product-meta-top">
+                      <span class="product-name">Camiseta 4</span>
+                      <span class="product-price">R$ 149</span>
+                    </div>
+                    <button class="button primary buy-button" type="button" data-product="Camiseta 4" data-price="149" data-stock="20">Comprar</button>
+                  </div>
+                </article>
+                <article class="gallery-card">
+                  <span class="product-badge">Solo 20 unidades disponibles</span>
+                  <img src="assets/piece-5.png" alt="Camiseta 5" />
+                  <div class="product-meta">
+                    <div class="product-meta-top">
+                      <span class="product-name">Camiseta 5</span>
+                      <span class="product-price">R$ 149</span>
+                    </div>
+                    <button class="button primary buy-button" type="button" data-product="Camiseta 5" data-price="149" data-stock="20">Comprar</button>
+                  </div>
+                </article>
+                <article class="gallery-card">
+                  <span class="product-badge">Solo 20 unidades disponibles</span>
+                  <img src="assets/piece-6.png" alt="Camiseta 6" />
+                  <div class="product-meta">
+                    <div class="product-meta-top">
+                      <span class="product-name">Camiseta 6</span>
+                      <span class="product-price">R$ 149</span>
+                    </div>
+                    <button class="button primary buy-button" type="button" data-product="Camiseta 6" data-price="149" data-stock="20">Comprar</button>
+                  </div>
+                </article>
+              </div>
+          </section>
+        </div>
+      </section>
+
+    </main>
+
+    <div class="modal" id="imageModal">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Cerrar">&times;</button>
+        <img id="modalImage" alt="Vista ampliada" />
+      </div>
+    </div>
+
+    <div class="checkout-modal" id="checkoutModal" aria-hidden="true">
+      <div class="checkout-modal-content">
+        <button class="modal-close checkout-close" aria-label="Cerrar">&times;</button>
+        <div class="checkout-summary">
+          <p class="eyebrow">Checkout</p>
+          <h3 id="checkoutProductName">Producto</h3>
+          <p id="checkoutProductPrice">R$ 0</p>
+          <form class="checkout-form" id="checkoutForm">
+            <label>
+              Nombre
+              <input id="checkoutName" name="name" type="text" placeholder="Tu nombre" required />
+            </label>
+            <label>
+              E-mail
+              <input id="checkoutEmail" name="email" type="email" placeholder="tu@email.com" required />
+            </label>
+            <label>
+              Cantidad
+              <input id="checkoutQuantity" name="quantity" type="number" min="1" value="1" required />
+            </label>
+
+            <div class="payment-options">
+              <button class="payment-option active" id="cardButton" type="button">Crédito / débito</button>
+              <button class="payment-option" id="pixButton" type="button">Pix</button>
+            </div>
+
+            <div class="payment-instructions" id="paymentInstructions"></div>
+            <button class="button primary" type="submit">Enviar pedido</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <audio id="eggSound" preload="auto">
+      <source src="assets/cracked egg.mp3" type="audio/mpeg" />
+    </audio>
+
+    <footer class="site-footer">
+      <div class="container footer-inner"></div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
