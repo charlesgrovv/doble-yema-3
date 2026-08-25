@@ -1,24 +1,30 @@
 # Doble Yema
 
-Site estático para a Doble Yema.
-
-## Estrutura
+Site da Doble Yema — projeto Vite com duas páginas:
 
 - `index.html` — página principal
-- `styles.css` — estilos do site
+- `primer-drop.html` — página da loja (drop limitado)
+- `styles.css` — estilos compartilhados
 - `script.js` — interação do menu e formulário
+- `vite.config.js` — build multipágina (as duas páginas entram no `dist/`)
 
-## Uso
-
-Abra `index.html` no navegador ou use um servidor local para visualizar o site.
-
-### Servidor local simples
-
-No terminal:
+## Como rodar
 
 ```bash
-cd /Users/will/Downloads/evento-main/doble-yema
-python3 -m http.server 8000
+npm install
+npm run dev
 ```
 
-Em seguida, abra `http://localhost:8000`.
+O servidor sobe em `http://localhost:5173` (se a porta estiver ocupada, o Vite avança para 5174+).
+
+## Build de produção
+
+```bash
+npm run build
+```
+
+Saída em `dist/`: as duas páginas + assets com hash. Para preview do build:
+
+```bash
+npm run preview
+```
