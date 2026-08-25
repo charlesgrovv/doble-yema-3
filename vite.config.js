@@ -5,7 +5,6 @@ export default defineConfig({
     rollupOptions: {
       input: {
         index: 'index.html',
-        'primer-drop': 'primer-drop.html',
       },
     },
   },

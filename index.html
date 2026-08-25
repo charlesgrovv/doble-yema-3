@@ -4,146 +4,171 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Doble Yema — Variant C: Clean commerce</title>
-
+<link rel="icon" type="image/svg+xml" href="/assets/hero-egg.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="header">
-    <div class="container">
-      <span class="brand">Doble Yema</span>
-      <nav aria-label="Principal">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top">Doble Yema</a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="siteNav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="siteNav" aria-label="Principal">
         <a href="#tienda">Tienda</a>
         <a href="#concepto">Concepto</a>
-        <a href="mailto:contato@dobleyema.com">Contacto</a>
+        <a href="#contacto">Contacto</a>
       </nav>
+      <a href="#" id="cartIcon" aria-label="Ver carrito" class="cart-icon"><span aria-hidden="true">🛒</span> <span id="cartBadge" class="cart-badge">0</span></a>
     </div>
-  </div>
+  </header>
 
+  <main id="top">
   <section class="hero">
     <div class="container">
-      <span class="kicker">Lanzamiento limitado</span>
-      <h1>El primer drop de Doble Yema</h1>
-      <p class="hero-sub">Piezas numeradas, únicas y fugaces. Cuando se agotan, no vuelven a aparecer.</p>
+      <span class="brand">DOBLE YEMA</span>
+      <h1>SI LO ENCUENTRAS, TUVISTE SUERTE.</h1>
+      <p class="hero-sub">Una edición limitada. 20 unidades de cada pieza. Cuando se acaba, desaparece.</p>
       <img src="assets/hero-egg.png" alt="Doble Yema" />
-      <a class="hero-cta" href="#tienda">Ver el drop</a>
+      <div class="hero-meta">PRIMER DROP · 06 PIEZAS · 20 UNIDADES CADA UNA</div>
+      <a class="hero-cta" href="#tienda">VER EL PRIMER DROP</a>
     </div>
   </section>
 
         <section class="shop" id="tienda">
-        <div class="container">
-          <section class="shop-intro" aria-labelledby="shop-title">
-            <div class="shop-hero">
-              <div>
-                <p class="eyebrow">Loja limitada</p>
-                <h2 id="shop-title">Compra tu pieza y elige cómo pagar.</h2>
-                <p>
-                  Los pedidos se confirman por WhatsApp y aceptamos crédito/débito o Pix.
-                  Cada pieza es limitada y no tiene reposición.
-                </p>
-              </div>
-              <div class="shop-highlights">
-                <div class="shop-pill">Entrega rápida</div>
-                <div class="shop-pill">Pago seguro</div>
-                <div class="shop-pill">Edición limitada</div>
-              </div>
-            </div>
-          </section>
-          <div class="shop-grid">
-            <div class="product">
-              <span class="left-badge">Solo 20 unidades disponibles</span>
-              <div class="thumb"><img src="assets/piece-1.png" alt="Sudadera 1" /></div>
-              <div class="body">
-                <h3>Sudadera 1</h3>
-                <p class="meta">Numerada · Edición limitada</p>
-                <p class="price">R$ 149</p>
-                <button class="button primary buy-button" type="button" data-product="Sudadera 1" data-price="149" data-stock="20">Comprar</button>
-              </div>
-            </div>
-            <div class="product">
-              <span class="left-badge">Solo 20 unidades disponibles</span>
-              <div class="thumb"><img src="assets/piece-2.png" alt="Sudadera 2" /></div>
-              <div class="body">
-                <h3>Sudadera 2</h3>
-                <p class="meta">Numerada · Edición limitada</p>
-                <p class="price">R$ 149</p>
-                <button class="button primary buy-button" type="button" data-product="Sudadera 2" data-price="149" data-stock="20">Comprar</button>
-              </div>
-            </div>
-            <div class="product">
-              <span class="left-badge">Solo 20 unidades disponibles</span>
-              <div class="thumb"><img src="assets/piece-3.png" alt="Sudadera 3" /></div>
-              <div class="body">
-                <h3>Sudadera 3</h3>
-                <p class="meta">Numerada · Edición limitada</p>
-                <p class="price">R$ 149</p>
-                <button class="button primary buy-button" type="button" data-product="Sudadera 3" data-price="149" data-stock="20">Comprar</button>
-              </div>
-            </div>
-            <div class="product">
-              <span class="left-badge">Solo 20 unidades disponibles</span>
-              <div class="thumb"><img src="assets/piece-4.png" alt="Sudadera 4" /></div>
-              <div class="body">
-                <h3>Sudadera 4</h3>
-                <p class="meta">Numerada · Edición limitada</p>
-                <p class="price">R$ 149</p>
-                <button class="button primary buy-button" type="button" data-product="Sudadera 4" data-price="149" data-stock="20">Comprar</button>
-              </div>
-            </div>
-            <div class="product">
-              <span class="left-badge">Solo 20 unidades disponibles</span>
-              <div class="thumb"><img src="assets/piece-5.png" alt="Sudadera 5" /></div>
-              <div class="body">
-                <h3>Sudadera 5</h3>
-                <p class="meta">Numerada · Edición limitada</p>
-                <p class="price">R$ 149</p>
-                <button class="button primary buy-button" type="button" data-product="Sudadera 5" data-price="149" data-stock="20">Comprar</button>
-              </div>
-            </div>
-            <div class="product">
-              <span class="left-badge">Solo 20 unidades disponibles</span>
-              <div class="thumb"><img src="assets/piece-6.png" alt="Sudadera 6" /></div>
-              <div class="body">
-                <h3>Sudadera 6</h3>
-                <p class="meta">Numerada · Edición limitada</p>
-                <p class="price">R$ 149</p>
-                <button class="button primary buy-button" type="button" data-product="Sudadera 6" data-price="149" data-stock="20">Comprar</button>
-              </div>
+    <div class="container">
+      <div class="shop-head">
+        <h2>PRIMER DROP</h2>
+        <p class="shop-note">6 piezas. 20 unidades de cada una. Una vez agotadas, no vuelven.</p>
+      </div>
+      <div class="shop-grid">
+        <div class="gallery-card">
+          <div class="product">
+            <span class="left-badge product-badge">Solo 20 unidades disponibles</span>
+            <div class="thumb"><img src="assets/piece-1.png" alt="Doble Yema 001" /></div>
+            <div class="body">
+              <h3>DOBLE YEMA 001</h3>
+              <p class="product-personality">The first find.</p>
+              <p class="price">R$ 149</p>
+              <p class="availability">20 DISPONIBLES</p>
+              <button class="button primary buy-button" type="button" data-product="Doble Yema 001" data-image="piece-1.png" data-price="149" data-stock="20">AÑADIR AL CARRITO</button>
             </div>
           </div>
         </div>
-      </section>
-
-  <section class="concept" id="concepto">
-    <div class="container">
-      <h2>El concepto</h2>
-      <p>La doble yema no se puede predecir ni fabricar. Solo sucede. Doble Yema convierte esa rareza en productos numerados y de edición limitada: sin catálogo permanente, sin reposición.</p>
+        <div class="gallery-card">
+          <div class="product">
+            <span class="left-badge product-badge">Solo 20 unidades disponibles</span>
+            <div class="thumb"><img src="assets/piece-2.png" alt="Doble Yema 002" /></div>
+            <div class="body">
+              <h3>DOBLE YEMA 002</h3>
+              <p class="product-personality">The unexpected pair.</p>
+              <p class="price">R$ 149</p>
+              <p class="availability">20 DISPONIBLES</p>
+              <button class="button primary buy-button" type="button" data-product="Doble Yema 002" data-image="piece-2.png" data-price="149" data-stock="20">AÑADIR AL CARRITO</button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <div class="product">
+            <span class="left-badge product-badge">Solo 20 unidades disponibles</span>
+            <div class="thumb"><img src="assets/piece-3.png" alt="Doble Yema 003" /></div>
+            <div class="body">
+              <h3>DOBLE YEMA 003</h3>
+              <p class="product-personality">The lucky strike.</p>
+              <p class="price">R$ 149</p>
+              <p class="availability">20 DISPONIBLES</p>
+              <button class="button primary buy-button" type="button" data-product="Doble Yema 003" data-image="piece-3.png" data-price="149" data-stock="20">AÑADIR AL CARRITO</button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <div class="product">
+            <span class="left-badge product-badge">Solo 20 unidades disponibles</span>
+            <div class="thumb"><img src="assets/piece-4.png" alt="Doble Yema 004" /></div>
+            <div class="body">
+              <h3>DOBLE YEMA 004</h3>
+              <p class="product-personality">The rare discovery.</p>
+              <p class="price">R$ 149</p>
+              <p class="availability">20 DISPONIBLES</p>
+              <button class="button primary buy-button" type="button" data-product="Doble Yema 004" data-image="piece-4.png" data-price="149" data-stock="20">AÑADIR AL CARRITO</button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <div class="product">
+            <span class="left-badge product-badge">Solo 20 unidades disponibles</span>
+            <div class="thumb"><img src="assets/piece-5.png" alt="Doble Yema 005" /></div>
+            <div class="body">
+              <h3>DOBLE YEMA 005</h3>
+              <p class="product-personality">The limited edition.</p>
+              <p class="price">R$ 149</p>
+              <p class="availability">20 DISPONIBLES</p>
+              <button class="button primary buy-button" type="button" data-product="Doble Yema 005" data-image="piece-5.png" data-price="149" data-stock="20">AÑADIR AL CARRITO</button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <div class="product">
+            <span class="left-badge product-badge">Solo 20 unidades disponibles</span>
+            <div class="thumb"><img src="assets/piece-6.png" alt="Doble Yema 006" /></div>
+            <div class="body">
+              <h3>DOBLE YEMA 006</h3>
+              <p class="product-personality">The final piece.</p>
+              <p class="price">R$ 149</p>
+              <p class="availability">20 DISPONIBLES</p>
+              <button class="button primary buy-button" type="button" data-product="Doble Yema 006" data-image="piece-6.png" data-price="149" data-stock="20">AÑADIR AL CARRITO</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bundle-section">
+        <h2>¿NO PUEDES ELEGIR UNA?</h2>
+        <p class="bundle-title">LLÉVATE EL DROP COMPLETO.</p>
+        <div class="bundle-details">
+          <div class="bundle-content">
+            <p>6 camisetas</p>
+            <p>• edición completa</p>
+            <p>• packaging especial</p>
+          </div>
+          <div class="bundle-pricing">
+            <p class="original-price">R$ 894</p>
+            <p class="bundle-price">R$ 799</p>
+          </div>
+        </div>
+        <button class="button primary bundle-button" type="button">QUIERO EL DROP COMPLETO</button>
+      </div>
     </div>
   </section>
 
-  
-  </div>
+  <section class="concept" id="concepto">
+    <div class="container">
+      <h2>LA DOBLE YEMA ES RARA.</h2>
+      <p class="concept-stat">1 de cada 1.000 huevos puede contener dos yemas.</p>
+      <p class="concept-stat">No puedes pedirlas.</p>
+      <p class="concept-stat">No puedes predecirla.</p>
+      <p class="concept-stat">No puedes fabricarla.</p>
+      <p class="concept-stat">Solo sucede.</p>
+      <p class="concept-message">Nosotros convertimos esa suerte en algo que puedes llevar contigo.</p>
+    </div>
+  </section>
+
 <section class="section contact-section" id="contacto">
         <div class="container">
           <div class="contact-card">
             <h2>Contato</h2>
             <p class="contact-lead">Fale com a equipe da Doble Yema — respondemos em breve.</p>
-            <form class="contact-form">
-              <label>
-                Nome
-                <input type="text" name="nome" placeholder="Seu nome" required />
-              </label>
-              <label>
-                E-mail
-                <input type="email" name="email" placeholder="seu@email.com" required />
-              </label>
-              <label>
-                Mensagem
-                <textarea name="mensagem" rows="4" placeholder="Sua mensagem" required></textarea>
-              </label>
-              <button class="button primary" type="submit">Enviar mensagem</button>
-            </form>
+            <nav class="social-links" aria-label="Canales de contacto">
+              <a href="#" aria-label="Instagram">Instagram <span aria-hidden="true">↗</span></a>
+              <a href="#" aria-label="Discord">Discord <span aria-hidden="true">↗</span></a>
+              <a href="#" aria-label="WhatsApp">WhatsApp <span aria-hidden="true">↗</span></a>
+            </nav>
           </div>
         </div>
       </section>
+      </main>
 <div class="modal" id="imageModal">
       <div class="modal-content">
         <button class="modal-close" aria-label="Cerrar">&times;</button>
@@ -152,34 +177,31 @@
     </div>
 
     <div class="checkout-modal" id="checkoutModal" aria-hidden="true">
-      <div class="checkout-modal-content">
-        <button class="modal-close checkout-close" aria-label="Cerrar">&times;</button>
-        <div class="checkout-summary">
-          <p class="eyebrow">Checkout</p>
-          <h3 id="checkoutProductName">Producto</h3>
-          <p id="checkoutProductPrice">R$ 0</p>
-          <form class="checkout-form" id="checkoutForm">
-            <label>
-              Nombre
-              <input id="checkoutName" name="name" type="text" placeholder="Tu nombre" required />
-            </label>
-            <label>
-              E-mail
-              <input id="checkoutEmail" name="email" type="email" placeholder="tu@email.com" required />
-            </label>
-            <label>
-              Cantidad
-              <input id="checkoutQuantity" name="quantity" type="number" min="1" value="1" required />
-            </label>
-
-            <div class="payment-options">
-              <button class="payment-option active" id="cardButton" type="button">Crédito / débito</button>
-              <button class="payment-option" id="pixButton" type="button">Pix</button>
+          <div class="checkout-modal-content">
+            <button class="modal-close checkout-close" aria-label="Cerrar">&times;</button>
+            <div class="checkout-summary">
+              <p class="eyebrow">Has encontrado una Doble Yema. 🥚🥚</p>
+              <h3 id="checkoutProductName">Producto</h3>
+              <p id="checkoutProductPrice">R$ 0</p>
+              <p id="checkoutQuantityLabel">Cantidad: 1</p>
+              <div id="checkoutDynamicContent"></div>
+              <form class="checkout-form" id="checkoutForm">
+                <label>
+                  Nombre
+                  <input id="checkoutName" name="name" type="text" placeholder="Tu nombre" required />
+                </label>
+                <label>
+                  E-mail
+                  <input id="checkoutEmail" name="email" type="email" placeholder="tu@email.com" required />
+                </label>
+                <div class="whatsapp-instructions">
+                  <p>Al hacer clic en CONTINUAR POR WHATSAPP, se abrirá un chat con nuestro equipo para confirmar tu pedido.</p>
+                </div>
+                <button class="button primary" type="submit">CONTINUAR POR WHATSAPP</button>
+              </form>
             </div>
-
-            <div class="payment-instructions" id="paymentInstructions"></div>
-            <button class="button primary" type="submit">Enviar pedido</button>
-          </form>
+          </div>
+        </div>
         </div>
       </div>
     </div>
@@ -187,6 +209,12 @@
     <audio id="eggSound" preload="auto">
       <source src="assets/cracked-egg.mp3" type="audio/mpeg" />
     </audio>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>© 2026 Doble Yema. Todos los derechos reservados.</span>
+        <a href="mailto:hola@dobleyema.com">hola@dobleyema.com</a>
+      </div>
+    </footer>
 <script type="module" src="/script.js"></script>
 </body>
 </html>
