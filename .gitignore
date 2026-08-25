@@ -1,9 +1,9 @@
 # Dependencies
 node_modules/
+dist/
 
 # Environment files
-.env
-.env.*
+.env*
 
 # OS files
 .DS_Store
